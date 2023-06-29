@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vertical-split-slider</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="script/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <figure>
+        <ul class="panel">
+            <!-- li*3>div.bg>div.shadow^.txt>h2^nav>span+strong{View Detail Page} -->
+            <li class="on">
+                <div class="bg" style="background-image: url(img/pic1.jpg);">
+                    <!-- inline으로 style을 입히게 되면 장점
+                    우선순위가 최상위가 됩니다
+                    상속되는 문제서 최상위 상속자가 됩니다
+                    => 입히고자 하는 css를 정확하게 입힐수있는 방법
+                    단점 : index의 길이가 무지막지하게 길어집니다
+                    css효과를 넣으려면 같은 요소 모든곳에 적용해야 한다
+                    -->
+                    <div class="shadow"></div>
+                </div>
+                <div class="txt">
+                    <h2>INNOVATION</h2>
+                </div>
+                <nav>
+                    <span><i class="fa-regular fa-star"></i></span>
+                    <strong>View Detail Page</strong>
+                </nav>
+            </li>
+            <li>
+                <div class="bg" style="background-image: url(img/pic2.jpg);">
+                    <div class="shadow"></div>
+                </div>
+                <div class="txt">
+                    <h2>BRAND NEW</h2>
+                </div>
+                <nav>
+                    <span><i class="fa-regular fa-star"></i></span>
+                    <strong>View Detail Page</strong>
+                </nav>
+            </li>
+            <li>
+                <div class="bg" style="background-image: url(img/pic3.jpg);">
+                    <div class="shadow"></div>
+                </div>
+                <div class="txt">
+                    <h2>REMARKABLE</h2>
+                </div>
+                <nav>
+                    <span><i class="fa-regular fa-star"></i></span>
+                    <strong>View Detail Page</strong>
+                </nav>
+            </li>
+        </ul>
+        <a href="#" class="btnUp">
+            <span></span>
+            <em>UP</em>
+        </a>
+        <a href="#" class="btnDown">
+            <span></span>
+            <em>DOWN</em>
+        </a>
+    </figure>
+</body>
+
+</html>
